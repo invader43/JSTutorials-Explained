@@ -83,4 +83,71 @@ let lastName = undefined; //
 let lastName = null; // used for explicitly clearing the value of a variable
 ```
 
-null represents 
+null represents absense of value whereas undefined meaning the value is not assigned, for example
+
+```js
+let name;
+// name has the value undefined
+let name = null;
+// now the name has the value null
+```
+
+### Dynamic Typing 
+This is a feature that JavaScript has , that offers flexibility over the type of variable with the let keyword.
+[Go the w3schools for more clarity.](https://www.w3schools.com/js/js_typeof.asp) 
+
+```js
+let name = 'daksesh'; 
+let number = 23;
+let isAgreedUpon = false; 
+let lastName = undefined; 
+let colorSelected = null; 
+/*
+Console
+-----------------
+> typeof name
+< "string"
+-----------------
+> name = 1;
+< 1
+-----------------
+> typeof name
+< "number"
+-----------------
+*/
+
+```
+Above example demonstrates the dynamic typing capabilities of the JavaScript . Also note that all types of numbers are numbers in javascript unlike other languages.
+
+```js
+/* Console
+-----------------
+> typeof age
+< "number
+-----------------
+> age = 30.1
+< 30.1
+-----------------
+> typeof age
+< "number"
+-----------------
+*/
+```
+Note that the 'undefined' assignment also sets the type to undefined.
+
+```js
+/* Console
+-----------------
+> typeof lastName
+< "undefined"
+-----------------
+> typeof colorSelected
+< "object"
+*/
+
+```
+Undefined is a type and value in javascript. The last typeof is explained in the next section.
+
+
+
+
