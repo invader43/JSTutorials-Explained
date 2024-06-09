@@ -149,5 +149,46 @@ Note that the 'undefined' assignment also sets the type to undefined.
 Undefined is a type and value in javascript. The last typeof is explained in the next section.
 
 
+Reference Types are as follows:
+- Object
+- Array ( yes Array is a reference type in JavaScript)
+- Function ( is also a reference type in JavaScript)
 
+Next section is about the reference type "Object".
 
+### Objects
+Like any other language , objects are used for implementing [abstraction](https://en.wikipedia.org/wiki/Abstraction_(computer_science)) and [Encapsulation](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)).The same idea follows up in JavaScript, where we can create Abstractions by making variables as properties of an Object.
+
+Syntax and examples are below 
+```js
+// We are creating the Person Object
+
+let person = {
+    name : 'daksesh';
+    age : 23
+}; // {} represents the object literal
+
+console.log(person);
+
+/* Console
+-----------------
+> {name:"daksesh" , age = 23}
+> __proto__: Object
+-----------------
+*/
+```
+
+Dot notation for accessing the variables inside an object.\
+Bracket Notation is also used , both have their own uses.
+
+```js
+/* Console
+-----------------
+> person.name
+< "daksesh"
+-----------------
+> person['name'] 
+< "daksesh"
+-----------------
+```
+Dot notation easier but Bracket Notation is powerful when the variable name is unknown before runtime.
