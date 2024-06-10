@@ -192,3 +192,65 @@ Bracket Notation is also used , both have their own uses.
 -----------------
 ```
 Dot notation easier but Bracket Notation is powerful when the variable name is unknown before runtime.
+
+
+### Arrays 
+
+```js
+let selectedColors = []; // Denotes an array literal 
+selectedColors = ['red', 'blue'];
+```
+![Alt text](image-1.png)
+
+
+Accessing elements in an array using the [] operator 
+
+```js
+console.log(selectedColors[0]);
+
+//dynamic length 
+selectedColors[2] = 1;
+// note that type is not constrained in an array unlike other programs
+```
+
+Also, array is an "object" in JavaScript. 
+
+### Functions
+Set of statements that does something
+
+```js
+function helloworld(name){
+//body of the function
+console.log(name + "hello");
+}
+//Since function declaration is not a variable declaration , we need not end it with ';'
+
+// also note that + operator can be used to concatenate strings
+```
+
+Lets call the function we wrote
+
+```js
+helloworld('daksesh');
+/* Console
+-----------------
+dakseshhello    index.js:3
+```
+Here , name is the parameter, and the inputted argument for that parameter is 'daksesh'. Now we talk about the 'return' keyword.
+
+```js
+function sq(num){
+    return num * num;
+}
+
+let x = sq(2);
+console.log(x);
+
+/* Console
+-----------------
+4               index.js:12
+>
+
+*/
+```
+This ends our tutorial about basic JavaScript.
